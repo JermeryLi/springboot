@@ -8,4 +8,4 @@
 8、jar包外 (不带spring.profile)配置文件;\
 9、jar包内(不带spring.profile)配置文件;\
 10、@Configuration注解类上的@PropertySource;\
-11、通过SpringApplication.setDefaultProperties;\
+11、通过SpringApplication.setDefaultProperties;

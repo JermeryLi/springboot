@@ -1,6 +1,7 @@
 package com.lining.springboot.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -10,10 +11,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @description TestController
  */
 @Controller
-public class TestController {
-    @RequestMapping("test")
-    @ResponseBody
-    public String test(){
-        return "lining";
+@RequestMapping("index")
+public class IndexController {
+    @RequestMapping("")
+    public String test(Model model){
+        model.addAttribute("value","lining");
+        return "index";
     }
 }
